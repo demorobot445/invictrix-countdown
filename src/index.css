@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Lonear";
+  src: url("/fonts/Lonear.otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/ProximaNova.woff2");
+}
+
+@theme {
+  --font-lonear: "Lonear";
+  --font-proxmia-nova: "Proxima Nova";
+}
