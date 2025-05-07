@@ -25,7 +25,7 @@ function App() {
       <div className="cover pointer-events-none fixed h-full w-full flex items-center justify-center z-20 bg-[#010101]">
         <div className="overflow-hidden">
           <h1 className="text-white translate-y-full heading font-lonear text-center lg:text-9xl">
-            05 MAY
+            15 MAY
           </h1>
         </div>
       </div>
