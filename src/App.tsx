@@ -2,6 +2,7 @@ import { useRef } from "react";
 import CountDown from "./CountDown";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Form from "./Form";
 
 function App() {
   const container = useRef<HTMLElement>(null);
@@ -25,35 +26,33 @@ function App() {
       <div className="cover pointer-events-none fixed h-full w-full flex items-center justify-center z-20 bg-[#010101]">
         <div className="overflow-hidden">
           <h1 className="text-white translate-y-full heading font-lonear text-center lg:text-9xl">
-            15 MAY
+            25 MAY
           </h1>
         </div>
       </div>
       <div className="flex max-h-[720px] flex-col items-center h-full justify-around lg:justify-between">
-        <img className="w-52 h-52 object-contain" src="/logo.png" alt="logo" />
-        <CountDown />
+        <img className="w-56 h-56 object-contain" src="/logo.png" alt="logo" />
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-[10px] lg:text-xs font-normal text-[#f2d38a]">
+            Refinement completes in:
+          </p>
+          <CountDown />
+        </div>
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-white font-lonear text-4xl lg:text-5xl uppercase  text-center ">
-            a new standard
-            <br /> of luxury
-            <br /> is unfolding
+            An Elevated
+            <br />
+            Chapter Unfolds
           </h1>
           <p className="text-[#f2d38a] font-lonear text-center text-sm lg:text-lg">
-            Timeless access, Cultural power,
+            Invictrix has never been about beginnings only evolutions.As we
+            refine
             <br />
-            Intentionally yours.
+            the contours of your experience, we invite you to stand by for what
+            comes next.
           </p>
         </div>
-        <div className="flex flex-col gap-4 w-full items-center">
-          <input
-            className="h-12 w-full lg:w-80 font-proxmia-nova text-white focus:outline-none p-4 border-[#f2d38a] border placeholder:text-[#777777]"
-            type="text"
-            placeholder="Email address"
-          />
-          <button className="text-[#f2d38a] hover:text-[#010101] hover:bg-[#f2d38a] transition cursor-pointer h-12 w-full lg:w-80 border-[#f2d38a] border uppercase">
-            get early access
-          </button>
-        </div>
+        <Form />
       </div>
     </main>
   );
