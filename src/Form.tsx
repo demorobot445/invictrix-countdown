@@ -10,7 +10,7 @@ const Form = () => {
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      setStatus("Please wait ...!");
+      setStatus("Intention Sending…");
       const result = await emailjs.send(
         "service_tz9hbe5",
         "template_ayiu9fg",
@@ -24,7 +24,7 @@ const Form = () => {
     } catch (error) {
       console.log(error);
     } finally {
-      setStatus("Email Send Successfully");
+      setStatus("Delivered.");
     }
   };
 
@@ -44,7 +44,7 @@ const Form = () => {
       />
       <button
         type="submit"
-        className="text-[#f2d38a] hover:text-[#010101] hover:bg-[#f2d38a] transition lg:h-12 cursor-pointer py-2 w-full lg:w-[450px] border-[#f2d38a] border uppercase"
+        className="text-[#f2d38a] font-proxmia-nova lg:text-base text-xs hover:text-[#010101] hover:bg-[#f2d38a] transition h-12 cursor-pointer py-2 w-full lg:w-[450px] border-[#f2d38a] border uppercase"
       >
         {status}
       </button>

@@ -52,12 +52,12 @@ const CountDown = () => {
         >
           <div className="pr-2 pl-2 relative w-max flex flex-col items-center">
             <h3
-              className={`countdown-element ${unit} font-manrope font-semibold text-white font-lonear text-4xl lg:text-5xl text-center relative z-10`}
+              className={`countdown-element ${unit} font-semibold text-white font-lonear text-4xl lg:text-5xl text-center relative z-10`}
             >
               {value}
             </h3>
           </div>
-          <p className="text-[10px] lg:text-xs font-normal text-[#f2d38a] uppercase mt-1 text-center w-full">
+          <p className="text-[10px] lg:text-xs font-proxmia-nova text-[#f2d38a] uppercase mt-1 text-center w-full">
             {unit}
           </p>
         </div>
